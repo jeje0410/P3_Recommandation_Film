@@ -1,0 +1,72 @@
+Déploiement Flask sur HEROKU
+
+Prendre le projet 3. les clients suivants sont installés
+Heroku CLI
+Flask
+GIT
+
+Pour déployer sur HEROKU
+git push heroku master
+#master ==> Nom de la branche à déployer
+
+Production du fichr de requirement
+pip freeze > requirements.txt
+
+Pour se connecter à Heroku
+heroku login
+
+Processus windows
+tasklist
+Ceux avec le nom Python
+tasklist | findstr /i "python"
+
+Pour tuer le processus spécifié par son numéro
+taskkill /PID 00000
+
+Passer Flask en moode debug
+set FLASK_DEBUG=1
+
+Tutoriel Flask
+https://www.kaherecode.com/tutorial/demarrer-avec-flask-un-micro-framework-python
+
+Créer un remote à partir du repository GIT
+heroku git:remote -a codingx-python
+
+Pour connaitre les remote
+git remote
+
+
+####################### GIT AVEC GIT HUB ###################################
+
+Création d'un répertoire GIT
+git init
+
+Pour connaitre les statuts des fichiers à déployer
+git status
+
+Pour ajouter un fichier au déploiement
+git add nomFihier
+ou git add . ==> TOus les fichiers, du coup faire un .gitignore pour enlever des fichiers ou des répertoires
+
+Pour commiter les deriers ajouts
+git commit -m "Commentaire du déploiement"
+
+Pour configurer le serveur distant
+git remote add serveur https://github.com/jeje0410/P6_Categorisation_questions.git
+
+Supprimer un remote
+git remote rm serveur
+
+Supprimer un suivi git
+ git rm -r --cached <folder-name>
+
+Renomer une branche
+git branch -M main
+
+Récupérer ce qu'il y a sur le serveur
+git pull serveur main
+
+Pousser sur le serveur
+git push -u serveur main
+-u ne sera plus nécessaire par la suite
+ L'option -u (--set-upstream en format long) est utiliser pour la première fois pour demander à Git d'ajouter une référence à cette branche
