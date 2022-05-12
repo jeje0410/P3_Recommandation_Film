@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Propoistion de suggestion de films</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Le film choisi est<BR>{{ name['nomFilm'] }} </h1>
+    <h2>Voici une liste de cinq films similaires :  
+    <BR><BR>{{ name1['nomFilm'] }}
+    <BR>{{ name2['nomFilm'] }}
+    <BR>{{ name3['nomFilm'] }}
+    <BR>{{ name4['nomFilm'] }}
+    <BR>{{ name5['nomFilm'] }} </h2>
+</body>
+</html>
